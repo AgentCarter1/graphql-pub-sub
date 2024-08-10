@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Door {
+  id: String!
+  name: String!
+  isOpen: Boolean
+}
+
+type Query {
+  getAllDoors: [Door!]!
+}
+
+type Mutation {
+  addDoor(name: String!): Door!
+  openDoor(id: String!): Door!
+}
+
+type Subscription {
+  doorAdded: Door!
+  doorOpened: Door!
+  doorClosed: Door!
+}
